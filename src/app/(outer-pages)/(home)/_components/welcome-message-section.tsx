@@ -4,10 +4,9 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { WELCOME_MESSAGES } from "@/data/welcome-message"
-import Image from "next/image"
-
+} from "@/components/ui/card";
+import { WELCOME_MESSAGES } from "@/contents/welcome-message";
+import Image from "next/image";
 
 const WelcomeMessageSection = () => {
   return (
@@ -21,37 +20,39 @@ const WelcomeMessageSection = () => {
           A Warm Welcome to Our Techfest
         </h2>
       </div>
-      <div
-        className="grid grid-cols-1 lg:grid-cols-2 gap-5"
-      >
-        {
-          WELCOME_MESSAGES.map((message, i) => (
-            <Card key={i} className="bg-muted/20 group hover:bg-muted/30 transition-colors">
-              <CardHeader className="flex flex-row gap-4">
-                <Image src={message.image} width={100} height={100} alt={message.name} className="h-16 w-16 object-cover object-center rounded-md" />
-                <div className="sm:self-end">
-                  <CardTitle className="max-sm:hidden">
-                    Message from {message.post}
-                  </CardTitle>
-                  <CardDescription>
-                    <span>{message.name}</span><span className="sm:hidden">
-                      &nbsp;- {message.post}
-                    </span>
-                  </CardDescription>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground group-hover:text-card-foreground transition-all">
-                  {message.message}
-                </p>
-              </CardContent>
-            </Card>
-          ))
-        }
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        {WELCOME_MESSAGES.map((message, i) => (
+          <Card
+            key={i}
+            className="bg-muted/20 group hover:bg-muted/30 transition-colors"
+          >
+            <CardHeader className="flex flex-row gap-4">
+              <Image
+                src={message.image}
+                width={100}
+                height={100}
+                alt={message.name}
+                className="h-16 w-16 object-cover object-center rounded-md"
+              />
+              <div className="sm:self-end">
+                <CardTitle className="max-sm:hidden">
+                  Message from {message.post}
+                </CardTitle>
+                <CardDescription>
+                  <span>{message.name}</span>
+                  <span className="sm:hidden">&nbsp;- {message.post}</span>
+                </CardDescription>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground group-hover:text-card-foreground transition-all">
+                {message.message}
+              </p>
+            </CardContent>
+          </Card>
+        ))}
       </div>
-
-
     </section>
-  )
-}
-export default WelcomeMessageSection
+  );
+};
+export { WelcomeMessageSection };

@@ -1,18 +1,15 @@
-import AllTechfestSection from "./_components/all-techfests-section";
-import HeroSection from "./_components/hero-section";
-import HighlightSection from "./_components/highlight-section";
-import WelcomeMessageSection from "./_components/welcome-message-section";
+import { HeroSection } from "./_components/hero-section";
+import { HighlightImages } from "./_components/highlight-images";
+import { WelcomeMessageSection } from "./_components/welcome-message-section";
 
-
-const Page = () => {
+const Home = () => {
   return (
     <div className="space-y-12">
       <HeroSection />
-      <AllTechfestSection />
-      <HighlightSection />
+      <HighlightImages />
       <WelcomeMessageSection />
     </div>
   );
 };
 
-export default Page;
+export default Home;

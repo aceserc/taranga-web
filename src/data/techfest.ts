@@ -46,7 +46,7 @@ export type CurrentTechfestStatus = "counting" | "started" | "completed";
 export const techfestData: TechfestData = {
   "v7.0": {
     path: "/v7.0/",
-    startDate: "2024/12/12",
+    startDate: "2025/12/12",
     endDate: "",
     landingPage: {
       desc: "Dive into ACES Techfest v7.0—where ideas spark, skills grow, and the future takes shape. Join the action and redefine innovation!",
