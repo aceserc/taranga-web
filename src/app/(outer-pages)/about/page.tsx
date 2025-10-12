@@ -1,12 +1,7 @@
-import { buttonVariants } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-import { cn } from "@/helpers/cn"
-import { ArrowRight } from "lucide-react"
-import { Metadata } from "next"
-import Link from "next/link"
-import { Fragment } from "react"
-
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { Metadata } from "next";
+import { Fragment } from "react";
 
 const AboutPage = async () => {
   return (
@@ -22,10 +17,20 @@ const AboutPage = async () => {
 
       <div className="flex flex-col items-center justify-center text-center gap-4 max-w-3xl m-auto relative z-10">
         <p>
-          ACES Techfest is one of the largest and most established technological festivals in Eastern Nepal. The festival draws a substantial number of visitors and participants each year, ensuring extensive media coverage across major online platforms, television channels, and print media, highlighting both the main events and the pre- and post-event activities.
+          ACES Techfest is one of the largest and most established technological
+          festivals in Eastern Nepal. The festival draws a substantial number of
+          visitors and participants each year, ensuring extensive media coverage
+          across major online platforms, television channels, and print media,
+          highlighting both the main events and the pre- and post-event
+          activities.
         </p>
         <p>
-          The audience for ACES Techfest is diverse and widespread, primarily targeting tech-savvy individuals aged 15-25. Additionally, the festival engages participants from science and technology academia, tech and development-focused companies, national stakeholders in innovation, and curious members of the general public, creating a vibrant and inclusive atmosphere.
+          The audience for ACES Techfest is diverse and widespread, primarily
+          targeting tech-savvy individuals aged 15-25. Additionally, the
+          festival engages participants from science and technology academia,
+          tech and development-focused companies, national stakeholders in
+          innovation, and curious members of the general public, creating a
+          vibrant and inclusive atmosphere.
         </p>
       </div>
       <div className="flex items-center justify-center flex-col relative z-10">
@@ -40,7 +45,6 @@ const AboutPage = async () => {
                 title: "4k+",
                 description: "Participants and Visitors",
               },
-
             ].map((stats, i) => (
               <Fragment key={i}>
                 {i !== 0 && (
@@ -67,18 +71,12 @@ const AboutPage = async () => {
             ))}
           </CardContent>
         </Card>
-        <Link
-          href={"https://aceserc.org"}
-          className={cn(buttonVariants({ variant: "link" }), "w-5/6 md:w-1/4 group/arrow text-muted-foreground")}>
-          Learn about ACES
-          <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
-        </Link>
       </div>
-    </div >
-  )
-}
-export default AboutPage
+    </div>
+  );
+};
+export default AboutPage;
 
 export const metadata: Metadata = {
   title: "About",
-}
+};
