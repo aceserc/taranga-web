@@ -48,7 +48,7 @@ const Layout = ({ children }: Props) => {
               "min-w-32 group/arrow max-lg:w-full"
             )}
           >
-            Explore Taranga
+            Explore
             <ArrowRightIcon className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
           </Link>
         }

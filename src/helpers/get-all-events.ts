@@ -13,6 +13,7 @@ export type EventData = {
   content: ReactElement;
   category?: string[];
   desc: string;
+  by: string;
 };
 
 export const getAllEvents = async (
@@ -46,6 +47,7 @@ export const getAllEvents = async (
           content: content,
           category: frontmatter.category,
           desc: frontmatter.desc,
+          by: frontmatter.by,
         };
       })
     );

@@ -40,8 +40,6 @@ export type CurrentTechfest = TechfestValue & {
   label: TechfestLabel;
 };
 
-export type CurrentTechfestStatus = "counting" | "started" | "completed";
-
 export const techfestData: TechfestData = {
   "v1.0": {
     path: "/v1.0/",

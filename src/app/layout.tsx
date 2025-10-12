@@ -4,6 +4,7 @@ import { currentTechfest } from "@/data/techfest";
 import TopLoader from "@/components/loaders/top-loader";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import PageViews from "@/components/ga/page-views";
+import { CURRENT_TARANGA } from "@/contents/event-data";
 
 export default function RootLayout({
   children,
@@ -27,8 +28,8 @@ export default function RootLayout({
 // web metadata for SEO
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${currentTechfest.label} - ACES Techfest`,
-    default: `${currentTechfest.label} - ACES Techfest`,
+    template: `%s | ${CURRENT_TARANGA.label} - Taranga ACES x EXCESS`,
+    default: `${CURRENT_TARANGA.label} - Taranga ACES x EXCESS`,
   },
   description:
     "ACES Techfest is one of the largest and most established technological festivals in Eastern Nepal, It is a platform for students to showcase their technical skills and knowledge.",
@@ -82,7 +83,7 @@ export const metadata: Metadata = {
     {
       name: "jrTilak",
       url: "https://jrtilak.dev",
-    }
+    },
   ],
   category: "Engineering and Technology",
 
