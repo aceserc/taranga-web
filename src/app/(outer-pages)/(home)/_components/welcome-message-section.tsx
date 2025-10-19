@@ -17,7 +17,7 @@ const WelcomeMessageSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 gradient-text">
-          A Warm Welcome to Our Techfest
+          A Warm Welcome !
         </h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
