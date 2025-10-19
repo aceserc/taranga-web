@@ -29,7 +29,7 @@ const HighlightImages = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 gradient-text">
-          Highlights from Previous Techfests
+          Highlights from Previous Fests
         </h2>
       </div>
       <Carousel>
@@ -37,7 +37,10 @@ const HighlightImages = () => {
           {images.map((group, i) => {
             if (i % 2 === 0) {
               return (
-                <CarouselItem key={i} className="basis-8/12 md:basis-5/12">
+                <CarouselItem
+                  key={i}
+                  className="basis-8/12 md:basis-5/12 my-auto"
+                >
                   <div className="grid grid-cols-2 grid-rows-5 gap-4 max-h-[65vh]">
                     <div className="row-span-2">
                       <ImageDialog src={group[0].src} badge={group[0].from} />
@@ -53,7 +56,10 @@ const HighlightImages = () => {
               );
             }
             return (
-              <CarouselItem key={i} className="basis-8/12 md:basis-5/12">
+              <CarouselItem
+                key={i}
+                className="basis-8/12 md:basis-5/12 my-auto"
+              >
                 <div className="grid grid-cols-2 grid-rows-5 gap-4 max-h-[65vh]">
                   <div className="row-span-2 col-start-1 row-start-4">
                     <ImageDialog src={group[0].src} badge={group[0].from} />
