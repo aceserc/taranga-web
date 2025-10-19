@@ -37,8 +37,8 @@ const HeroSection = () => {
 
             <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
               <h1>
-                <span className="gradient-text">Taranga</span>, From Circuits to
-                Code.
+                <span className="gradient-text">Taranga</span>, The Wave of
+                Technology
               </h1>
             </div>
 
