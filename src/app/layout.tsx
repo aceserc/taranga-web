@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     default: `${CURRENT_TARANGA.label} - Taranga ACES x EXCESS`,
   },
   description:
-    "ACES Techfest is one of the largest and most established technological festivals in Eastern Nepal, It is a platform for students to showcase their technical skills and knowledge.",
+    "ACES Taranga is one of the largest and most established technological festivals in Eastern Nepal, It is a platform for students to showcase their technical skills and knowledge.",
   icons: [
     {
       url: "/assets/images/logo.png",
@@ -63,16 +63,16 @@ export const metadata: Metadata = {
     "ACES Community IOE",
     "ACES Community IOE Purwanchal Campus",
     "ACES Community Purwanchal Campus",
-    "ACES Techfest",
-    "Techfest",
-    "Techfest Nepal",
-    "Techfest Dharan",
-    "Techfest Dharan Nepal",
-    "Techfest IOE",
-    "Techfest IOE Purwanchal Campus",
-    "Techfest Purwanchal Campus",
-    "ACES Techfest Nepal",
-    "ACES Techfest Dharan",
+    "ACES Taranga",
+    "Taranga",
+    "Taranga Nepal",
+    "Taranga Dharan",
+    "Taranga Dharan Nepal",
+    "Taranga IOE",
+    "Taranga IOE Purwanchal Campus",
+    "Taranga Purwanchal Campus",
+    "ACES Taranga Nepal",
+    "ACES Taranga Dharan",
     "Delta",
     "Delta",
     "Delta Nepal",
@@ -91,13 +91,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://techfest.aceserc.org/",
+    url: "https://taranga.aceserc.org/",
     images: "/preview.png",
     countryName: "Nepal",
-    title: `${currentTechfest.label} | ACES Techfest`,
+    title: `${currentTechfest.label} | ACES Taranga`,
     emails: ["aces@ioepc.edu.np"],
     description:
-      "ACES Techfest is one of the largest and most established technological festivals in Eastern Nepal, It is a platform for students to showcase their technical skills and knowledge",
+      "ACES Taranga is one of the largest and most established technological festivals in Eastern Nepal, It is a platform for students to showcase their technical skills and knowledge",
   },
 
   // robots.txt

@@ -67,7 +67,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <ScrollDownButton scrollTo="#techfest" />
+        <ScrollDownButton scrollTo="#taranga" />
         <Floating3DModels />
       </section>
     </>

@@ -6,12 +6,11 @@ import Marquee from "react-fast-marquee";
 
 type Props = {
   data: Partner[];
-  id?: string
-  title: string
+  id?: string;
+  title: string;
 };
 
 const MarqueeWithHeader = async ({ data, title, id }: Props) => {
-
   if (!data || data.length === 0) {
     return null;
   }
@@ -30,7 +29,12 @@ const MarqueeWithHeader = async ({ data, title, id }: Props) => {
           className="flex items-center justify-center max-w-[90vw] mx-auto"
         >
           {data.map((sponsor, i) => (
-            <Link href={sponsor.href ?? "#"} key={i} target="_blank" className={!sponsor.href ? "pointer-events-none" : ""}>
+            <Link
+              href={sponsor.href ?? "#"}
+              key={i}
+              target="_blank"
+              className={!sponsor.href ? "pointer-events-none" : ""}
+            >
               <Image
                 src={sponsor.logo}
                 alt={sponsor.name}

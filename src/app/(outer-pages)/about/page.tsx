@@ -11,13 +11,13 @@ const AboutPage = async () => {
           Where technology meets creativity
         </h2>
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 gradient-text">
-          About Techfest
+          About Taranga
         </h2>
       </div>
 
       <div className="flex flex-col items-center justify-center text-center gap-4 max-w-3xl m-auto relative z-10">
         <p>
-          ACES Techfest is one of the largest and most established technological
+          ACES Taranga is one of the largest and most established technological
           festivals in Eastern Nepal. The festival draws a substantial number of
           visitors and participants each year, ensuring extensive media coverage
           across major online platforms, television channels, and print media,
@@ -25,7 +25,7 @@ const AboutPage = async () => {
           activities.
         </p>
         <p>
-          The audience for ACES Techfest is diverse and widespread, primarily
+          The audience for ACES Taranga is diverse and widespread, primarily
           targeting tech-savvy individuals aged 15-25. Additionally, the
           festival engages participants from science and technology academia,
           tech and development-focused companies, national stakeholders in

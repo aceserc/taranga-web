@@ -46,8 +46,8 @@ export const techfestData: TechfestData = {
     startDate: "2025/12/12",
     endDate: "",
     landingPage: {
-      desc: "Dive into ACES Techfest v7.0—where ideas spark, skills grow, and the future takes shape. Join the action and redefine innovation!",
-      header: "Techfest v7.0: Ignite Your Innovation",
+      desc: "Dive into ACES Taranga v7.0—where ideas spark, skills grow, and the future takes shape. Join the action and redefine innovation!",
+      header: "Taranga v7.0: Ignite Your Innovation",
       previewVideo:
         "https://ik.imagekit.io/4mz6ivdcd/Manual%20Uploads/Videos/ACES%20Promotional%20Video%201.mp4?tr=orig",
     },
