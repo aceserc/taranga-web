@@ -24,8 +24,9 @@ const EventsPage = async () => {
         <>
           {events.map((event, i) => (
             <Card
-              className="p-6 grid grid-cols-1 lg:grid-cols-7 bg-card/30 gap-9"
+              className="p-6 grid grid-cols-1 lg:grid-cols-7 bg-card/30 gap-9 scroll-m-20"
               key={i}
+              id={event.id}
             >
               <div
                 className={cn(
