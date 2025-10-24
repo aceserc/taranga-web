@@ -3,7 +3,7 @@ import { cn } from '@/helpers/cn';
 import Image from 'next/image';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { FullscreenIcon } from 'lucide-react';
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import { Badge } from '../ui/badge';
 
 type Props = {
@@ -21,7 +21,6 @@ const ImageDialog = ({
 	badge,
 }: Props) => {
 	const imageRef = useRef<HTMLImageElement>(null);
-	const [isFullscreen, setIsFullscreen] = useState(false);
 	const onFullScreen = () => {
 		if (!imageRef.current) return;
 		if (imageRef.current.requestFullscreen) {
@@ -37,18 +36,6 @@ const ImageDialog = ({
 			imageRef.current.msRequestFullscreen(); // For IE11
 		}
 	};
-
-	const handleFullscreenChange = () => {
-		setIsFullscreen(document.fullscreenElement === imageRef.current);
-	};
-
-	// Attach and clean up event listener for fullscreen changes
-	useEffect(() => {
-		document.addEventListener('fullscreenchange', handleFullscreenChange);
-		return () => {
-			document.removeEventListener('fullscreenchange', handleFullscreenChange);
-		};
-	}, []);
 
 	return (
 		<Dialog>
