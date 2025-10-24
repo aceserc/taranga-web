@@ -1,0 +1,11 @@
+Model Information:
+* title:	VR "HeadCat" HeadSet
+* source:	https://sketchfab.com/3d-models/vr-headcat-headset-c1c23ee5dac3478e9f289bf01a24f357
+* author:	DeonAden (https://sketchfab.com/DeonAden)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "VR "HeadCat" HeadSet" (https://sketchfab.com/3d-models/vr-headcat-headset-c1c23ee5dac3478e9f289bf01a24f357) by DeonAden (https://sketchfab.com/DeonAden) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
