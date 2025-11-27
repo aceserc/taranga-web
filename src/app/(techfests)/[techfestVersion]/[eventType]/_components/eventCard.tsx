@@ -32,12 +32,14 @@ function EventCard({
 										Soon
 									</Badge>
 								)}
-								<h3 className="text-xl sm:text-3xl md:text-4xl font-semibold text-foreground">
+								<h3 className="text-xl sm:text-3xl md:text-4xl mt-1 font-semibold text-foreground">
 									{e.event?.title}
 								</h3>
 							</div>
 							<div className="flex gap-2">
-								<Badge className="ms-3 max-sm:hidden" variant={'secondary'}>
+								<Badge
+									className="ms-3 whitespace-nowrap max-sm:hidden"
+									variant={'secondary'}>
 									{eventType.substring(0, eventType.length - 1)}
 								</Badge>
 								{e.by && (

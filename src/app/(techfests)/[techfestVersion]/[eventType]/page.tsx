@@ -70,7 +70,7 @@ const Page = async ({
 							<TabsContent
 								key={tab.value}
 								value={tab.value}
-								className="space-y-6">
+								className="space-y-6 my-6">
 								{(() => {
 									let filteredEvents = data;
 									if (tab.value === 'aces') {
