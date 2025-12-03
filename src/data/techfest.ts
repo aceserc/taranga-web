@@ -54,7 +54,7 @@ export const techfestData: TechfestData = {
 			desc: 'Dive into ACESxEXCESS Taranga—where ideas spark, skills grow, and the future takes shape. Join the action and redefine innovation!',
 			header: 'Taranga: Ignite Your Innovation',
 			previewVideo:
-				'https://ik.imagekit.io/smo1bg7nr/Taranga%20Intro%20Video.mp4?updatedAt=1763541703226',
+				'https://ik.imagekit.io/smo1bg7nr/Taranga%20Intro%20Video.mp4',
 		},
 		preEvents: [
 			{

@@ -112,7 +112,7 @@ export const metadata: Metadata = {
 		url: 'https://taranga.ioepc.edu.np',
 		images: '/preview.png',
 		countryName: 'Nepal',
-		title: `${currentTechfest.label} | ACES Taranga`,
+		title: `${currentTechfest.label} | ACES x EXCESS Taranga`,
 		emails: ['aces@ioepc.edu.np'],
 		description:
 			'Taranga - The wave of Technology is a joint tech fest by EXCESSxTech and ACES TechFest, bringing together brilliant minds of IOE Purwanchal Campus to collaborate, innovate and inspire the new wave of technology.',
