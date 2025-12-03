@@ -32,7 +32,7 @@ const WelcomeMessageSection = () => {
                 width={100}
                 height={100}
                 alt={message.name}
-                className="h-16 w-16 object-cover object-center rounded-md"
+                className="h-16 bg-muted-foreground w-16 object-cover object-center rounded-md"
               />
               <div className="sm:self-end">
                 <CardTitle className="max-sm:hidden">
