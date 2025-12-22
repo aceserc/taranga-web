@@ -65,7 +65,7 @@ export const techfestData: TechfestData = {
 			{
 				eventId: 'learning-challenge',
 				by: 'ACES',
-				date: 'Poush 1 to Poush 15',
+				date: 'Poush 7 onwards',
 			},
 			{
 				eventId: 'brain-storming-quiz',
