@@ -33,7 +33,7 @@ const Page = ({
 			/>
 
 			{/* Sponsors Section */}
-			<div className="container flex flex-col gap-12 max-w-6xl mt-8">
+			<div className="container flex flex-col gap-4 max-w-6xl mt-8">
 				<h1 className="text-4xl font-bold text-center mb-4">Our Sponsors</h1>
 				{/* Title Sponsors */}
 				{titleSponsors.length > 0 && (
@@ -41,7 +41,7 @@ const Page = ({
 						<h2 className="text-2xl font-semibold text-primary">
 							Title Sponsor
 						</h2>
-						<div className="flex flex-wrap justify-center gap-8">
+						<div className="flex flex-wrap justify-center gap-1">
 							{titleSponsors.map((sponsor, index) => (
 								<Link
 									href={sponsor.url ?? '#'}
@@ -49,7 +49,7 @@ const Page = ({
 									target="_blank"
 									rel="noopener noreferrer">
 									<div className="group relative flex flex-col items-center gap-4 bg-white/80 rounded-xl border hover:border-primary transition-all duration-300">
-										<div className="relative w-80 h-40">
+										<div className="relative w-full h-24">
 											<Image
 												src={`/assets/images/sponsors/${sponsor.logo}`}
 												alt={sponsor.name}
@@ -77,17 +77,17 @@ const Page = ({
 						<h2 className="text-2xl font-semibold text-primary">
 							Event Sponsors
 						</h2>
-						<div className="flex flex-wrap justify-center gap-8">
+						<div className="flex  flex-wrap justify-center gap-8">
 							{eventSponsors.map((sponsor, index) => (
 								<Link
 									href={sponsor.url ?? '#'}
 									key={index}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="w-full sm:w-64">
+									className="w-50 sm:w-34">
 									<Card className="h-full flex flex-col hover:border-primary transition-all duration-300 group overflow-hidden">
 										<CardContent className="p-6 flex items-center justify-center flex-grow bg-white/80">
-											<div className="relative w-full h-24">
+											<div className="relative w-40 h-10">
 												<Image
 													src={`/assets/images/sponsors/${sponsor.logo}`}
 													alt={sponsor.name}
@@ -96,7 +96,7 @@ const Page = ({
 												/>
 											</div>
 										</CardContent>
-										<CardFooter className="flex flex-col items-center gap-1 p-4 border-t">
+										<CardFooter className="flex flex-col items-center gap-1 p-2 border-t">
 											<p className="font-semibold group-hover:text-primary transition-colors text-center">
 												{sponsor.name}
 											</p>
@@ -120,10 +120,10 @@ const Page = ({
 								key={index}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="w-full sm:w-64">
+								className="w-50 sm:w-34">
 								<Card className="h-full flex flex-col hover:border-primary transition-all duration-300 group overflow-hidden">
 									<CardContent className="p-6 flex items-center justify-center flex-grow bg-white/80">
-										<div className="relative w-full h-24">
+										<div className="relative w-40 h-10">
 											<Image
 												src={`/assets/images/sponsors/${sponsor.logo}`}
 												alt={sponsor.name}
